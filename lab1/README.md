@@ -2,10 +2,15 @@
 
 ## Grammar Settings
 G[\<Word Symbol\>] --> \<Identifier\>$\epsilon$ | \<Unsigned Int\>$\epsilon$ | \<Single Char\>$\epsilon$ | \<Double Char\>$\epsilon$  
+
 \<Identifier\> --> [a-z A-Z] | \<Identifier\>[a-z A-Z] | \<Identifier\>[0-9]
+
 \<Unsigned Int\> --> [0-9] | \<Unsigned Int\>[0-9]
+
 \<Single Char\> --> + | - | * | ; | , | ( | ) | { | } | %
+
 \<Double Char\> --> \<Greater-than\>= | \<Less-than\>= | \<Less-than\>> | \<Not\>= | \<Equal\>= | \<Divide\>* | \<Add\>+︱\<Add\>=︱\<Minus\>-︱\<Minus\>=︱\<Multiple\>=︱\<Divide\>=︱\<Greater-than\>>︱\<Less-than\><︱\<And\>&︱\<Or\>|︱\<Divide\>/︱\<Multiple\>/
+
 \<Less Than\> --> <
 \<Equal\> --> =
 \<Greater-than\> --> >
