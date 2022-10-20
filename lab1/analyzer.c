@@ -196,7 +196,7 @@ void write_doubleChar(int sign, FILE* fw)
 	else if(sign == EQU)
 		fprintf(fw, "(%d, %c)\n", EQU, "==");
 	else if(sign == SADD)
-		fprintf(fw, ("%d, %c)\n", SADD, "++");
+		fprintf(fw, "(%d, %c)\n", SADD, "++");
 	else if(sign == SMIN)
 		fprintf(fw, "(%d, %c)\n", SMIN, "--");
 	else if(sign == AADD)
@@ -286,7 +286,7 @@ int analyzer(FILE* fp, FILE* fw)
 			} while (letter(c) == IDENTIFIER || number(c) == IDENTIFIER);
 			string[i - 1] = '\0';
 			int cat = cat_identifier(string);
-			fprintf(fw, "(%d, %s)\n", id, string);
+			fprintf(fw, "(%d, %s)\n", cat, string);
 		}
 
 		else if(number(c) == IDENTIFIER)
@@ -296,7 +296,7 @@ int analyzer(FILE* fp, FILE* fw)
 			string[i++] = c;
 			do
 			{
-				ch = fgetc(fp);
+				c = fgetc(fp);
 				string[i++] = c;
 			} while (number(c) == IDENTIFIER);
 			string[i - 1] = '\0';
@@ -311,7 +311,7 @@ int analyzer(FILE* fp, FILE* fw)
 
 		else if(cat_doubleChar_first(c) != 0)
 		{
-			sign = cat_doubleChar(cat_doubleChar_first(c), fgetc(fp));
+			int sign = cat_doubleChar(cat_doubleChar_first(c), fgetc(fp));
 			if(sign == NOTE_START)
 				note_flag = 1;
 			if(sign == NOTE)

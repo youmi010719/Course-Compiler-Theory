@@ -3,7 +3,7 @@
 int main(int argc, char** argv)
 {
 	char* read_file_path = argv[1];
-	char* writh_file_path = argv[2];
+	char* write_file_path = argv[2];
 	
 	FILE* fp;
 	fp = fopen(read_file_path, "r");
