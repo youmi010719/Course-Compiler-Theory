@@ -1,21 +1,21 @@
 # LAB1 Implementation of Lexical Analyzer
 
 ## Grammar Settings
-G[<Word Symbol>] --> <Identifier>$\epsilon$ | <Unsigned Int>$\epsilon$ | <Single Char>$\epsilon$ | <Double Char>$\epsilon$  
-<Identifier> --> [a-z A-Z] | <Identifier>[a-z A-Z] | <Identifier>[0-9]
-<Unsigned Int> --> [0-9] | <Unsigned Int>[0-9]
-<Single Char> --> + | - | * | ; | , | ( | ) | { | } | %
-<Double Char> --> <Greater-than>= | <Less-than>= | <Less-than>> | <Not>= | <Equal>= | <Divide>* | <Add>+︱<Add>=︱<Minus>-︱<Minus>=︱<Multiple>=︱<Divide>=︱<Greater-than>>︱<Less-than><︱<And>&︱<Or>|︱<Divide>/︱<Multiple>/
-<Less Than> --> <
-<Equal> --> =
-<Greater-than> --> >
-<Divide> --> /
-<Not> --> !
-<Add> --> +
-<Minus> --> -
-<Multiple> --> *
-<And> --> &
-<Or> --> |
+G[\<Word Symbol\>] --> \<Identifier\>$\epsilon$ | \<Unsigned Int\>$\epsilon$ | \<Single Char\>$\epsilon$ | \<Double Char\>$\epsilon$  
+\<Identifier\> --> [a-z A-Z] | \<Identifier\>[a-z A-Z] | \<Identifier\>[0-9]
+\<Unsigned Int\> --> [0-9] | \<Unsigned Int\>[0-9]
+\<Single Char\> --> + | - | * | ; | , | ( | ) | { | } | %
+\<Double Char\> --> \<Greater-than\>= | \<Less-than\>= | \<Less-than\>> | \<Not\>= | \<Equal\>= | \<Divide\>* | \<Add\>+︱\<Add\>=︱\<Minus\>-︱\<Minus\>=︱\<Multiple\>=︱\<Divide\>=︱\<Greater-than\>>︱\<Less-than\><︱\<And\>&︱\<Or\>|︱\<Divide\>/︱\<Multiple\>/
+\<Less Than\> --> <
+\<Equal\> --> =
+\<Greater-than\> --> >
+\<Divide\> --> /
+\<Not\> --> !
+\<Add\> --> +
+\<Minus\> --> -
+\<Multiple\> --> *
+\<And\> --> &
+\<Or\> --> |
 
 ## Categorical Codes
 | Word Symbol | Categorical Code | Word Symbol | Categorical Code |
