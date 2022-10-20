@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
 #define IDENTIFIER 		1		//identifier
 #define UNSIGNED_INT 	2		//unsigned integer
 #define VOID 			3		//void
