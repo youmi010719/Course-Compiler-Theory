@@ -1,7 +1,7 @@
 # LAB1 Implementation of Lexical Analyzer
 
 ## Grammar Settings
-G[\<Word Symbol\>] --> \<Identifier\>$\epsilon$ | \<Unsigned Int\>$\epsilon$ | \<Single Char\>$\epsilon$ | \<Double Char\>$\epsilon$  
+G[\<Word Symbol\>] --> \<Identifier\> $\epsilon$ | \<Unsigned Int\> $\epsilon$ | \<Single Char\> $\epsilon$ | \<Double Char\> $\epsilon$  
 
 \<Identifier\> --> [a-z A-Z] | \<Identifier\>[a-z A-Z] | \<Identifier\>[0-9]
 
