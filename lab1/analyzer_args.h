@@ -45,3 +45,7 @@
 #define OR 				44		// ||
 #define COL 			45		// |
 #define SAND 			46		// &
+
+#define NOTE_START		47		// /*
+#define NOTE_END		48		// */
+#define NOTE			49		// //
